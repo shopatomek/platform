@@ -1,0 +1,6 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+.vertical-center {
+    min-height: 100vh; /* Użyj pełnej wysokości widoku */
+    display: flex;
+    align-items: center; /* Wyśrodkowanie w pionie */
+}
