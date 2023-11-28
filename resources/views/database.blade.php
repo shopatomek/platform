@@ -8,7 +8,7 @@
         <div class="col-md-8">
 
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">{{ __('Database') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -17,9 +17,16 @@
                     </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Database') }}
                     <br>
-                    Now make great improvments of you programming Tomas!
+                    <div class="col-md-3">
+                        <div>
+
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
