@@ -411,8 +411,8 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                <a class="navbar-brand" href="{{ url('/home') }}">
+                    {{ config('cos.name', 'Dashboard') }}
                 </a>
                 <a class="navbar-brand" href="{{ route('database.show') }}">
                     {{ config('cos.name', 'Database') }}
