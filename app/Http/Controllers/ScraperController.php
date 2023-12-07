@@ -12,7 +12,8 @@ class ScraperController extends Controller
     public function scrap()
     {
         $client = new Client();
-        $url = 'https://www.tiktok.com/@theaitoolreport';
+        // $url = 'https://www.tiktok.com/@theaitoolreport';
+        $url = 'https://www.tiktok.com/@theaiclubhouse';
         // $url = 'https://meteo.pl/';
         $page = $client->request('GET', $url);
         // echo $page->filter(selector: '.tiktok-12ijsdd-H3CountInfos')->text();
