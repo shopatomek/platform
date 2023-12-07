@@ -22,6 +22,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('/scrap', [App\Http\Controllers\ScraperController::class, 'scrap'])->name('scrap');
 Route::get('/database', [DatabaseController::class, 'show'])->name('database.show');
 Route::post('/users', [UserController::class, 'store'])->name('users.store');
