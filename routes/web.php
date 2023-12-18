@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Request;
 use App\Http\Controllers\DatabaseController;
 use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +38,7 @@ Route::get('/hello', function () {
 Route::get('posts/{id}', function ($id) {
     return response('Post ' . $id);
 })->where('id', '[0-9]+');
+
+Route::get('/req', function (Request $request) {
+    return ($request->name . '' . $request->city);
+});
