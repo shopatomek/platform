@@ -423,6 +423,11 @@
                     <a class="navbar-brand" href="{{ route('database.show') }}">
                         {{ config('cos.name', 'Database') }}
                     </a>
+                    <a class="navbar-brand" href="{{ url('/listings') }}">
+                        {{ config('cos.name', 'Listings') }}
+                    </a>
+
+
                 @endauth
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
