@@ -25,3 +25,14 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/scrap', [App\Http\Controllers\ScraperController::class, 'scrap'])->name('scrap');
 Route::get('/database', [DatabaseController::class, 'show'])->name('database.show');
 Route::post('/users', [UserController::class, 'store'])->name('users.store');
+
+// Sposób zapisu
+Route::get('/hello', function () {
+    return response("hello world");
+});
+
+// Wildcard
+// parsing some value 
+Route::get('posts/{id}', function ($id) {
+    return response('Post ' . $id);
+})->where('id', '[0-9]+');
