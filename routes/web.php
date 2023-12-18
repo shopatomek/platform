@@ -38,7 +38,3 @@ Route::get('/hello', function () {
 Route::get('posts/{id}', function ($id) {
     return response('Post ' . $id);
 })->where('id', '[0-9]+');
-
-Route::get('/req', function (Request $request) {
-    return ($request->name . '' . $request->city);
-});
