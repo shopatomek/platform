@@ -424,7 +424,7 @@
                         {{ config('cos.name', 'Database') }}
                     </a>
                     <a class="navbar-brand" href="{{ url('/listings') }}">
-                        {{ config('cos.name', 'Listings') }}
+                        {{ config('cos.name', 'Job offers') }}
                     </a>
 
 
