@@ -14,4 +14,9 @@ class ListingController extends Controller
             'listings' => Listing::latest()->filter(request(['tag', 'search']))->get()
         ]);
     }
+
+    public function create()
+    {
+        return view('create');
+    }
 }
