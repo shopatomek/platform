@@ -1,11 +1,17 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-        @include('partials._search')
+
+
         <a href="/listings" class="inline-block text-black ml-4 mb-4"><i class="fa-solid fa-arrow-left"></i> Back
         </a>
+        <a href="/listings/create" class="inline-block mr-5 float-right bg-black text-white py-2 px-5">
+            Post Job</a>
+
         <div class="mx-4">
+
             <div class="bg-gray-50 border border-gray-200 p-10 rounded">
+
                 <div class="flex flex-col items-center justify-center text-center">
 
 

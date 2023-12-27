@@ -16,9 +16,9 @@
                             </div>
                         @endif
 
-                        {{ __('You are logged in!') }}
+                        {{ __('Welcome!') }}
                         <br>
-                        Now make great improvments of you programming Tomas!
+                        Add a user to get a Hell of a job
                     </div>
                 </div>
             </div>

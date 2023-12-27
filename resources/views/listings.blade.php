@@ -4,6 +4,8 @@
         {{-- @include('partials._register') --}}
         <a href="/home" class="inline-block text-black ml-4 mb-4"><i class="fa-solid fa-arrow-left"></i> Back
         </a>
+        <a href="/listings/create" class="inline-block mr-5 float-right bg-black text-white py-2 px-5">
+            Post Job</a>
         @include('partials._hero')
         @include('partials._search')
 
