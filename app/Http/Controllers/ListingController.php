@@ -7,19 +7,11 @@ use App\Models\Listing;
 
 class ListingController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
 
         return view('listings', [
-
-            'listings' => Listing::latest()->get()
-        ]);
-    }
-
-    public function show(Listing $id)
-    {
-        return view('listing', [
-            'listing' => Listing::find($id)
+            'listings' => Listing::latest()->filter(request(['tag']))->get()
         ]);
     }
 }

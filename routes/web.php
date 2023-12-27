@@ -41,7 +41,7 @@ Route::get('posts/{id}', function ($id) {
     return response('Post ' . $id);
 })->where('id', '[0-9]+');
 
-Route::get('/listings', [ListingController::class, 'index']);
+Route::get('/listings', [ListingController::class, 'index']); 
 
 Route::get('/listings/{id}', function ($id) {
     return view('listing', [
