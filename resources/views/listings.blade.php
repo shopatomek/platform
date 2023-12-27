@@ -3,8 +3,6 @@
 @section('content')
     <div class="container">
         @include('partials._register')
-
-
         @include('partials._hero')
         @include('partials._search')
 

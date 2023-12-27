@@ -8,7 +8,7 @@
                 </div>
                 <input type="text" name="search"
                     class="h-14 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none"
-                    placeholder="Search Laravel Gigs..." />
+                    placeholder="Search job..." />
                 <div class="absolute top-2 right-2">
                     <button type="submit" class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600">
                         Search
@@ -64,11 +64,8 @@
                 </div>
             </div>
         </div>
-
-
-
-
     </div>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -84,7 +81,7 @@
 @endsection
 <footer
     class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center">
-    <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
+    <p class="ml-2">Copyright &copy; 2024, All Rights reserved</p>
 
     <a href="create.html" class="absolute top-1/3 right-10 bg-black text-white py-2 px-5">Post Job</a>
 </footer>
