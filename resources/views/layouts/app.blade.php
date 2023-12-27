@@ -483,8 +483,6 @@
 
         <main class="py-4">
             @yield('content')
-
-
         </main>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

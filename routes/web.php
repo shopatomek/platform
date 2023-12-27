@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Request;
 use App\Http\Controllers\DatabaseController;
+use App\Http\Controllers\ListingController;
 use App\Http\Controllers\UserController;
 use App\Models\Listing;
 
@@ -40,12 +41,7 @@ Route::get('posts/{id}', function ($id) {
     return response('Post ' . $id);
 })->where('id', '[0-9]+');
 
-Route::get('/listings', function () {
-    return view('listings', [
-        'heading' => 'Latest Listings',
-        'listings' => Listing::all()
-    ]);
-});
+Route::get('/listings', [ListingController::class, 'index']);
 
 Route::get('/listings/{id}', function ($id) {
     return view('listing', [

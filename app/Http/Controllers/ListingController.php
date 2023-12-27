@@ -7,11 +7,12 @@ use App\Models\Listing;
 
 class ListingController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
+
         return view('listings', [
-            'heading' => 'Latest Listings',
-            'listings' => Listing::all()
+
+            'listings' => Listing::latest()->get()
         ]);
     }
 
