@@ -15,6 +15,8 @@
                     <div class="text-lg my-4">
                         <i class="fa-solid fa-location-dot"></i>{{ $listing->location }}
                     </div>
+
+
                     <div class="border border-gray-200 w-full mb-6"></div>
                     <div>
                         <h3 class="text-3xl font-bold mb-4">
@@ -34,22 +36,22 @@
                                 Website</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        laravel: "#ef3b2d",
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            laravel: "#ef3b2d",
+                        },
                     },
                 },
-            },
-        };
-    </script>
-@endsection
-@include('partials._footer')
+            };
+        </script>
+    @endsection
+    @include('partials._footer')
