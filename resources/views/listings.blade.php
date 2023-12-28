@@ -12,8 +12,13 @@
 
         @foreach ($listings as $listing)
             <div class="m-4">
+
                 <div class="bg-gray-50 border border-gray-200 rounded p-6">
+
                     <div>
+                        <img class=" hidden w-10 mr-6 md:block"
+                            src="{{ $listing->logo ? asset('storage/' . $listing->logo) : asset('images/no-image.png') }}"
+                            alt="" />
                         <h2>
                             <a href="/listings/{{ $listing['id'] }}">
                                 {{ $listing['title'] }}

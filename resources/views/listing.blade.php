@@ -1,8 +1,6 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-
-
         <a href="/listings" class="inline-block text-black ml-4 mb-4"><i class="fa-solid fa-arrow-left"></i> Back
         </a>
         <a href="/listings/create" class="inline-block mr-5 float-right bg-black text-white py-2 px-5">
@@ -43,6 +41,13 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+            <div class="mt-2 bg-gray-50 border border-gray-200 p-1 rounded">
+                <div class="mt-2 p-2 flex">
+                    <a href="/listings/{{ $listing->id }}/edit">
+                        <i class="fa-solid fa-pencil ml-1"></i>Edit
+                    </a>
                 </div>
             </div>
         </div>
