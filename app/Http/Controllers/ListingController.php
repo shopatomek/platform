@@ -12,7 +12,7 @@ class ListingController extends Controller
     {
 
         return view('listings', [
-            'listings' => Listing::latest()->filter(request(['tag', 'search']))->get()
+            'listings' => Listing::latest()->filter(request(['tag', 'search']))->paginate(5)
         ]);
     }
 
